@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
-import Layout from "../../components/Dashboard/DashboardLayout";
-import BarChar from "@/app/components/Dashboard/barchar/BarChar";
-import Fan from "@/app/components/Dashboard/Fan/Fan";
-import SearchBar from "@/app/components/Layout/header/SearchBar";
+import Layout from "../../../components/Dashboard/DashboardLayout";
+import BarChar from "@/components/Dashboard/barchar/BarChar";
+import Fan from "@/components/Dashboard/Fan/Fan";
+import SearchBar from "@/components/Layout/header/SearchBar";
 export default function page() {
   return (
     <Layout>

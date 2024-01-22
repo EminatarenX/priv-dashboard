@@ -1,11 +1,11 @@
 "use client";
-import Layout from "../components/Dashboard/DashboardLayout";
-import SearchBar from "../components/Layout/header/SearchBar";
-import LineChart from "../components/Dashboard/linechart/LineChart";
-import CircularChart from "../components/Dashboard/circularChart/CircularLineChart";
-import Fan from "../components/Dashboard/Fan/Fan";
+import Layout from "../../components/Dashboard/DashboardLayout";
+import SearchBar from "../../components/Layout/header/SearchBar";
+import LineChart from "../../components/Dashboard/linechart/LineChart";
+import CircularChart from "../../components/Dashboard/circularChart/CircularLineChart";
+import Fan from "../../components/Dashboard/Fan/Fan";
 import styles from "./styles.module.css";
-import BarChar from "../components/Dashboard/barchar/BarChar";
+import BarChar from "../../components/Dashboard/barchar/BarChar";
 export default function page() {
   return (
     <Layout>
