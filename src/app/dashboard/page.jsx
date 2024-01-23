@@ -6,6 +6,7 @@ import CircularChart from "../../components/Dashboard/circularChart/CircularLine
 import Fan from "../../components/Dashboard/Fan/Fan";
 import styles from "./styles.module.css";
 import BarChar from "../../components/Dashboard/barchar/BarChar";
+import Row from "./Row";
 export default function page() {
   return (
     <Layout>
@@ -81,7 +82,7 @@ export default function page() {
       <article className="flex flex-col lg:flex-row justify-between mt-5 gap-5 appear">
         <div className=" bg-gradient-to-r from-[#28273f] to-[#662e4e88] rounded-xl p-2 lg:p-5 w-full lg:w-1/2">
           <h2 className="text-white text-center">Best day</h2>
-          <BarChar hour={false}/>
+          <BarChar hour={false} />
         </div>
         <div className=" bg-gradient-to-r from-[#28273f] to-[#662e4e88] rounded-xl p-5 w-full lg:w-1/2">
           <h2 className="text-white text-center">Best month</h2>
@@ -137,6 +138,7 @@ export default function page() {
               <h3 className="text-white opacity-70 text-[12px]">
                 Raised this month
               </h3>
+
               <p className="text-white text-[12px]">
                 200,304.02 <span className="text-[12px]">mxn</span>
               </p>
@@ -227,25 +229,97 @@ export default function page() {
         </article>
       </section>
 
-      <section className="grid grid-cols-1 lg:grid-cols-4 gap-5 mt-5">
+      <section className="grid grid-cols-2 lg:grid-cols-4 gap-5 mt-5">
         <article className="bg-gradient-to-r from-[#28273f] to-[#662e4e88] rounded-xl p-2 lg:p-5 ">
-          <h3 className="text-white text-xs font-bold">RAISED</h3>
+          <h3 className="text-white text-xs font-bold mb-3">RAISED</h3>
+          <div className="flex justify-between">
+            <h3 className="text-white text-sm">Subs: </h3>
+            <span className="text-white">400.432 mxn</span>
+          </div>
+          <div className="flex justify-between">
+            <h3 className="text-white text-sm">Tips: </h3>
+            <span className="text-white">700.432 mxn</span>
+          </div>
+          <div className="flex justify-between">
+            <h3 className="text-white text-sm">Store: </h3>
+            <span className="text-white">4020.432 mxn</span>
+          </div>
+          <div className="flex justify-between">
+            <h3 className="text-white text-sm">Chat sales: </h3>
+            <span className="text-white">130.432 mxn</span>
+          </div>
         </article>
         <article className="bg-gradient-to-r from-[#28273f] to-[#662e4e88] rounded-xl p-2 lg:p-5 ">
-          <h3 className="text-white text-xs font-bold">CHARGEDBACK</h3>
+          <h3 className="text-white text-xs font-bold mb-3">CHARGEDBACK</h3>
+          <div className="flex justify-between">
+            <h3 className="text-white text-sm">Subs: </h3>
+            <span className="text-white">700.432 mxn</span>
+          </div>
+          <div className="flex justify-between">
+            <h3 className="text-white text-sm">Tips: </h3>
+            <span className="text-white">80.432 mxn</span>
+          </div>
         </article>
         <article className="bg-gradient-to-r from-[#28273f] to-[#662e4e88] rounded-xl p-2 lg:p-5 ">
-          <h3 className="text-white text-xs font-bold">REFUNDED</h3>
+          <h3 className="text-white text-xs font-bold mb-3">REFUNDED</h3>
+          <div className="flex justify-between">
+            <h3 className="text-white text-sm">Subs: </h3>
+            <span className="text-white">900.432 mxn</span>
+          </div>
+          <div className="flex justify-between">
+            <h3 className="text-white text-sm">Tips: </h3>
+            <span className="text-white">300.432 mxn</span>
+          </div>
         </article>
         <article className="bg-gradient-to-r from-[#28273f] to-[#662e4e88] rounded-xl p-2 lg:p-5 ">
-          <h3 className="text-white text-xs font-bold">
+          <h3 className="text-white text-xs font-bold mb-3">
             RAISED - CHARGEDBACK / REFUNDS
           </h3>
+          <div className="flex justify-between">
+            <h3 className="text-white text-sm">Subs: </h3>
+            <span className="text-white">340.432 mxn</span>
+          </div>
+          <div className="flex justify-between">
+            <h3 className="text-white text-sm">Tips: </h3>
+            <span className="text-white">650.432 mxn</span>
+          </div>
         </article>
       </section>
 
-      <section className="bg-gradient-to-r from-[#28273f] to-[#662e4e88] rounded-xl p-2 lg:p-5 mt-5">
-
+      <section className="rounded-xl mt-5 overflow-x-auto scrollbar-hide">
+        <table className="w-full rounded-xl min-w-[1200px] ">
+          <thead className="bg-gradient-to-r from-[#28273f] to-[#662e4e88] ">
+            <tr className="">
+              <th className="text-white text-xs font-bold mb-3 text-left p-2 rounded-l-xl">
+                PAYMENT ID
+              </th>
+              <th className="text-white text-xs font-bold mb-3 text-left p-2 ">
+                STATUS
+              </th>
+              <th className="text-white text-xs font-bold mb-3 text-left p-2 ">PAID</th>
+           
+              <th className="text-white text-xs font-bold mb-3 text-left p-2 ">KIND</th>
+              <th className="text-white text-xs font-bold mb-3 text-left p-2 ">
+                CHARGE BACK
+              </th>
+              <th className="text-white text-xs font-bold mb-3 text-left p-2 ">
+                CREATED
+              </th>
+              <th className="text-white text-xs font-bold mb-3 text-left p-2 rounded-r-xl">
+                CLOSED
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+           <Row />
+           <Row />
+           <Row />
+           <Row />
+           <Row />
+           
+     
+          </tbody>
+        </table>
       </section>
     </Layout>
   );
