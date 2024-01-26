@@ -2,7 +2,7 @@
 .layout {
     margin: 0;
     padding: 0;
-    height: 100vh; /* Altura del cuerpo que ocupa todo el viewport */
+    height: 100svh; /* Altura del cuerpo que ocupa todo el viewport */
     display: grid;
     grid-template-areas: 
       "header"

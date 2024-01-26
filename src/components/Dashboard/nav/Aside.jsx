@@ -2,6 +2,7 @@ import Home from "../../Layout/header/icons/Home"
 import Fans from "../../Layout/header/icons/Fans"
 import Logout from "../../Layout/header/icons/Logout"
 import Trending from "../../Layout/header/icons/Trending"
+import Plus from "@/components/Layout/header/icons/Plus"
 import Link from "next/link"
 export default function Aside({showMenu}) {
   return (
@@ -19,7 +20,12 @@ export default function Aside({showMenu}) {
             <Fans size={10}/>
             <p className="text-white mt-2">Fans</p>
             </Link>
+            <Link href={'/dashboard/creator'} className="flex flex-col items-center">
+            <Plus size={10} color={"#9CA0AE"}/>
+            <p className="text-white mt-2">Creator</p>
+            </Link>
             <div className="flex flex-col items-center">
+            
             <Logout size={25}/>
             <p className="text-white mt-2">Logout</p>
             </div>

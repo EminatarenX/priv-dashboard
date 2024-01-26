@@ -91,6 +91,7 @@ export default function page() {
       </article>
 
       <section className="mt-5 appear">
+        <h2 className="text-white mb-5 text-3xl">Earnings by source</h2>
         <article className="flex flex-col lg:flex-row gap-5 bg-gradient-to-r from-[#28273f] to-[#662e4e88]  rounded-xl p-2 lg:p-5 w-full">
           <div className="flex gap-5 w-full justify-evenly xl:justify-center">
             <div className="flex flex-col justify-center items-center gap-2">
@@ -230,6 +231,7 @@ export default function page() {
       </section>
 
       <section className="grid grid-cols-2 lg:grid-cols-4 gap-5 mt-5">
+
         <article className="bg-gradient-to-r from-[#28273f] to-[#662e4e88] rounded-xl p-2 lg:p-5 ">
           <h3 className="text-white text-xs font-bold mb-3">RAISED</h3>
           <div className="flex justify-between">
@@ -286,31 +288,32 @@ export default function page() {
         </article>
       </section>
 
-      <section className="rounded-xl mt-5 overflow-x-auto scrollbar-hide">
+      <section className="rounded-xl mt-5 overflow-x-auto scrollbar-hide degradado">
+         <h2 className="text-white mb-5 text-3xl">Payments</h2>
         <table className="w-full rounded-xl min-w-[1200px] ">
           <thead className="bg-gradient-to-r from-[#28273f] to-[#662e4e88] ">
             <tr className="">
-              <th className="text-white text-xs font-bold mb-3 text-left p-2 rounded-l-xl">
+              <th className="text-white text-xs font-bold mb-3 text-left p-5 rounded-l-xl">
                 PAYMENT ID
               </th>
-              <th className="text-white text-xs font-bold mb-3 text-left p-2 ">
+              <th className="text-white text-xs font-bold mb-3 text-left p-5 ">
                 STATUS
               </th>
-              <th className="text-white text-xs font-bold mb-3 text-left p-2 ">PAID</th>
+              <th className="text-white text-xs font-bold mb-3 text-left p-5 ">PAID</th>
            
-              <th className="text-white text-xs font-bold mb-3 text-left p-2 ">KIND</th>
-              <th className="text-white text-xs font-bold mb-3 text-left p-2 ">
+              <th className="text-white text-xs font-bold mb-3 text-left p-5 ">KIND</th>
+              <th className="text-white text-xs font-bold mb-3 text-left p-5 ">
                 CHARGE BACK
               </th>
-              <th className="text-white text-xs font-bold mb-3 text-left p-2 ">
+              <th className="text-white text-xs font-bold mb-3 text-left p-5 ">
                 CREATED
               </th>
-              <th className="text-white text-xs font-bold mb-3 text-left p-2 rounded-r-xl">
+              <th className="text-white text-xs font-bold mb-3 text-left p-5 rounded-r-xl">
                 CLOSED
               </th>
             </tr>
           </thead>
-          <tbody>
+          <tbody >
            <Row />
            <Row />
            <Row />

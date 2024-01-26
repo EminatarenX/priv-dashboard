@@ -8,6 +8,7 @@ import Trending from "../Layout/header/icons/Trending";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Fans from "../Layout/header/icons/Fans";
+import Plus from "../Layout/header/icons/Plus";
 export default function DashboardLayout({ children }) {
   const [showMenu, setShowMenu] = useState(false);
   const pathname = usePathname();
@@ -54,6 +55,14 @@ export default function DashboardLayout({ children }) {
           >
             <Fans size={10} />
             <p className="text-white mt-2 text-sm">Fans</p>
+          </Link>
+          <Link href={'/dashboard/creator'}
+          className={`flex flex-col items-center py-2 rounded ${
+            pathname === "/dashboard/creator" && "bg-neutral-700"
+          } hover:bg-neutral-700 bg-opacity-20 hover:bg-opacity-20 w-[100px]`}
+          >
+            <Plus size={"w-10 h-10"} color={"#9CA0AE"}/>
+            <p className="text-white mt-2 text-sm">Creator</p>
           </Link>
           <div
             className={`flex flex-col items-center py-2 rounded hover:bg-neutral-700 hover:bg-opacity-20 w-[100px]`}

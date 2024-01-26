@@ -65,12 +65,12 @@ export default function page() {
       </article>
       </section>
 
-        <section className="flex flex-col max-h-[600px] gap-5 px-5 pt-5 appear bg-gradient-to-r from-[#28273f] to-[#662e4e88] rounded-xl mt-5 w-full relative">
+        <section className="flex flex-col max-h-[600px] gap-5 px-5 pt-5 appear bg-gradient-to-r from-[#28273f] to-[#662e4e88] rounded-xl mt-5 w-full degradado">
             <div className="flex justify-between items-center flex-col md:flex-row">
             <h2 className="text-white text-center">Fans List</h2>
             <SearchBar />
             </div>
-            <div className="flex flex-col gap-5 degradado overflow-y-auto scrollbar-hide ">
+            <div className="flex flex-col gap-5 overflow-y-auto scrollbar-hide ">
                 <Fan />
                 <Fan />
                 <Fan />
